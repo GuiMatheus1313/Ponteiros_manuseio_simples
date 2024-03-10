@@ -3,9 +3,15 @@
 int a = 10;
 int * aPtr;
 
-aPtr = &a //Recebe o endereço da variável, NÃO CONTEÚDO 
+ //Recebe o endereço da variável, NÃO CONTEÚDO 
 
 int main(void) {
-  printf("Hello World\n");
+
+  aPtr = &a;
+  printf("conteudo de a %d\n", a);
+  printf("conteúdo de aPtr %p\n", aPtr);
+  printf("endereco de a %p\n", &a);
+  printf("\nendereco de aPtr %p\n", &aPtr);
+  printf("Valor direcionado de aPtr %d\n", *aPtr);
   return 0;
 }
